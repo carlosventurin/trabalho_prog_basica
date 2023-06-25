@@ -1,9 +1,7 @@
 ● Média de duração dos filmes;
-● Filmes que geraram prejuízo (custo de produção maior que bilheteria);
-● Gráfico da média de bilheteria por década;
 ● Coeficiente de correlação entre orçamento e duração.
+● Gráfico da média de bilheteria por década;
 ● Gráfico da média de custo de produção por década;
-● Coeficiente de correlação entre ano de lançamento e bilheteria;
 
 -------------------------------------------------
 
@@ -12,3 +10,5 @@
 ● Coeficiente de correlação entre nota e ano de lançamento;
 ● Moda dos diretores;
 ● Gráfico da quantidade de filmes por década;
+● Coeficiente de correlação entre ano de lançamento e bilheteria;
+● Filmes que geraram prejuízo (custo de produção maior que bilheteria);
