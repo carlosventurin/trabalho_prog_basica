@@ -9,7 +9,10 @@ print(bd['run_time'][1])
 
 tempomin = []
 for k in range(len(bd)):
-    a = bd['run_time'][k].replace('m', 'h').split('h')
+    filme = bd['run_time'][k]
+    if filme.count('h') == 0 and filme != 'Not Available':
+        filme ='0h' + filme
+    a = filme.replace('m', 'h').split('h')
     soma = 0
     for i in range(len(a)):
         if a[i] == 'Not Available':
@@ -21,5 +24,6 @@ for k in range(len(bd)):
                 soma += int(a[i])
     if a[0] != 'Not Available':
         tempomin.append(soma)
+
 bd['run_time'] = tempomin
 print(bd.head())
