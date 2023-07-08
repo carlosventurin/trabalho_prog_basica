@@ -3,6 +3,18 @@ import matplotlib.pyplot as plt
 
 bd = pd.read_csv("dataset.csv")
 
+
+
+#Moda dos diretores
+numeromax = bd['directors'].value_counts().max()
+diretores = bd['directors'].value_counts()
+print('O número de aparições dos diretores que mais possuem filmes na lista é', numeromax)
+for i in range(len(diretores)):
+    if diretores[i] == numeromax:
+        print(diretores.index[i])
+print('São os diretores que aparecem', numeromax, 'vezes.')
+
+'''
 print(bd['run_time'][0])
 print(bd['run_time'][1])
 
@@ -27,3 +39,4 @@ for k in range(len(bd)):
 
 bd['run_time'] = tempomin
 print(bd.head())
+'''
